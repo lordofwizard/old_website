@@ -5,31 +5,37 @@
 /* Font imports */
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap');
+@font-face{
+    font-family: 'ComicMono';
+    src: url('../../fonts/ComicMono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
   font-family: 'pixel-b';
-  src: url('../fonts/pixel-b.ttf') format('truetype');
+  src: url('../../fonts/pixel-b.ttf') format('truetype');
   font-weight: bolder;
   font-style: normal;
 }
 
 @font-face{
     font-family: 'ChessType';
-    src: url('../fonts/ChessType.ttf') format('truetype');
+    src: url('../../fonts/ChessType.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'subway';
-    src: url('../fonts/subway.ttf') format('truetype');
+    src: url('../../fonts/subway.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'ArcadeClassic';
-    src: url('../fonts/ArcadeClassic.ttf') format('truetype');
+    src: url('../../fonts/ArcadeClassic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -60,7 +66,7 @@
 /* Global styles */
 
 html {
-    background: url(../../img/back.jpg) repeat center center fixed;
+    background: url(../img/back.jpg) repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -82,3 +88,101 @@ body {
 }
 
 
+/* Header */
+header h1{
+    text-align: center;
+    line-height: 1.2em;
+}
+
+/* Navbar */
+
+nav{
+    margin: 5px;
+}
+
+nav ul{
+    font-family: 'ChessType';
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    color: lightblue;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: var(--color5);
+    background-color: white;
+    text-decoration: underline;
+}
+
+/* Sections */
+section{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+}
+
+
+/* Footer */
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    font-family: 'hack';
+    color: white;
+}
+
+
+/* Section Components */
+
+article{
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+article h2{
+    font-family: 'ArcadeClassic';
+}
+
+article p{
+    line-height: 1.6em;
+    font-size: 1em;
+    color: pink;
+    font-family: 'ComicMono';
+}
+
+article figure{
+    margin: 5px;
+}
+
+.neofetch{
+    font-family: 'hack';
+}
+
+#details{
+    font-size: 16px;
+    line-height: 1.4em;
+    display: flex;
+}
+
+.neofetch label{
+    color: pink;
+    font-weight: bolder;
+}
+
+article ul{
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+article li{
+
+}
